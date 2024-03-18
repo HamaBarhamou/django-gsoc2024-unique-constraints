@@ -8,20 +8,51 @@ Cette proposition vise à étendre la fonction bulk_create de Django pour suppor
 - Garantir la prise en charge des expressions et des colonnes calculées dans les contraintes uniques, permettant à Django de gérer des cas d'utilisation avancés.
 - Élaborer une suite de tests exhaustifs et une documentation détaillée pour assurer l'adoption et la compréhension aisées de la nouvelle fonctionnalité.
 
+
 ## Plan de Projet
-### Phase 1: Recherche et Analyse
-- Analyse approfondie des mécanismes actuels de bulk_create et des limitations liées à la gestion des contraintes uniques.
-- Exploration des meilleures pratiques et des solutions existantes dans d'autres frameworks ou langages pour inspirer la conception.
 
-### Phase 2: Conception et Développement
-- Développement d'une suite de tests complets pour valider la fonctionnalité dans divers scénarios, y compris des cas limites.
-- Rédaction d'une documentation claire et instructive, comprenant des exemples d'utilisation et des meilleures pratiques.
-- Collaboration avec les mentors et la communauté pour le feedback et les ajustements nécessaires.
+### Phase 1 : Recherche et Analyse
+- **Analyse des Mécanismes Actuels :** Examen approfondi de la fonction bulk_create pour identifier les limitations existantes, notamment en ce qui concerne la gestion des contraintes uniques et les cas impliquant des colonnes calculées ou des expressions.
+- **Benchmarking :** Étude des meilleures pratiques et des solutions existantes dans d'autres frameworks et langages de programmation pour gérer des situations similaires, afin d'inspirer notre approche.
 
-### Phase 3: Tests, Documentation et Révision
-- Développement d'une suite de tests complets pour valider la fonctionnalité dans divers scénarios, y compris des cas limites.
-- Rédaction d'une documentation claire et instructive, comprenant des exemples d'utilisation et des meilleures pratiques.
-- Collaboration avec les mentors et la communauté pour le feedback et les ajustements nécessaires.
+### Phase 2 : Conception et Développement Initial
+- **Extension de l'API bulk_create :** Proposition d'une extension de l'API pour inclure la gestion des noms de contraintes uniques.
+```
+def bulk_create(self, objs, batch_size=None, ignore_conflicts=False, unique_constraints=None):
+    # Implémentation ...
+```
+
+- **Développement de la Logique de Résolution de Contraintes :** Création d'une fonction pour traduire les noms de contraintes en expressions SQL adaptées aux différents moteurs de base de données.
+
+```
+def resolve_unique_constraints(unique_constraints_names):
+    # Implémentation ...
+```
+
+- **Développement d'Exemples d'Utilisation :** Illustration de l'utilisation de la fonctionnalité étendue dans des cas d'usage réels.
+
+```
+UserTopic.objects.bulk_create([...], unique_constraints=['constraint_name', ...])
+```
+
+- **Tests Initiaux :** Écriture de tests unitaires pour valider les fonctionnalités de base et s'assurer de l'absence de régressions.
+- **Documentation Initiale :** Rédaction des premières ébauches de documentation, y compris la description de la nouvelle API et des exemples d'utilisation.
+
+### Phase 3 : Tests Approfondis, Documentation Finale et Révisions
+
+- **Tests Approfondis :** Développement d'une suite de tests plus complète pour couvrir une gamme étendue de scénarios, y compris des cas limites et des tests spécifiques aux différents moteurs de base de données supportés par Django.
+python
+
+```
+def test_bulk_create_with_unique_constraints(self):
+    # Test de la gestion des contraintes uniques dans bulk_create
+    # Implémentation ...
+```
+
+- **Finalisation de la Documentation :** Élaboration d'une documentation détaillée et instructive, intégrant des exemples d'utilisation, des meilleures pratiques et des conseils pour les développeurs. La documentation inclura également des informations sur la manière de contribuer et d'étendre la fonctionnalité.
+- **Feedback et Ajustements :** Interaction régulière avec les mentors et la communauté Django pour recueillir des retours sur l'implémentation proposée, et réalisation des ajustements nécessaires pour s'aligner au mieux avec les standards et les attentes de la communauté.
+- **Préparation pour la Fusion :** Une fois tous les tests passés et les retours communautaires intégrés, préparation de la pull request finale pour l'intégration dans le code source de Django.
+
 ## Calendrier
 - **Semaines 1-3 :** Recherche et analyse des besoins.
 - **Semaines 4-7 :** Conception et développement initial.
