@@ -20,7 +20,9 @@ Cette proposition adopte une approche stratégique et intégrée pour améliorer
 - **Benchmarking :** Étude des meilleures pratiques et des solutions existantes dans d'autres frameworks et langages de programmation pour gérer des situations similaires, afin d'inspirer notre approche.
 
 ### Phase 2 : Conception et Développement Initial
-- **Dépréciation de `unique_fields` :** Comme suggéré initialement, déprécier l'utilisation de `unique_fields` en faveur de `unique_constraints`, qui peut être plus expressif et flexible. Elle peut accepter non seulement des noms de contraintes uniques définies dans `Meta.constraints`, mais aussi potentiellement des tuples qui représentent des groupes de champs devant être uniques ensemble.
+- **Dépréciation de `unique_fields` :** Comme suggéré initialement par Simon Charette
+>My recommendation would be to introduce a unique_constraint: str | tuple[str | Expression] kwarg and deprecate unique_fields. When provided a str it would be a reference >to a UniqueConstraint by .name and when it's a tuple it would be expected to be a index expression where str are resolved to field names.
+, déprécier l'utilisation de `unique_fields` en faveur de `unique_constraints`, qui peut être plus expressif et flexible. Elle peut accepter non seulement des noms de contraintes uniques définies dans `Meta.constraints`, mais aussi potentiellement des tuples qui représentent des groupes de champs devant être uniques ensemble.
 
 
 - **Utilisation de `unique_constraints` :** Permettre à `unique_constraints` d'accepter des noms de contraintes (comme des chaînes) qui sont définies dans la classe `Meta` du modèle. Pour les expressions complexes, au lieu de les résoudre directement dans la clause SQL, Django pourrait les résoudre en amont en tant qu'ensemble de champs ou d'expressions représentant la contrainte, en utilisant les mécanismes d'inférence d'index ou les métadonnées de contrainte disponibles.
