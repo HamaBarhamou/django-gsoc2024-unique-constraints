@@ -135,7 +135,7 @@ The success of this GSoC project will be measured by several key milestones rela
 - **Final Success: Contribution to Ticket #28821** - As a bonus objective, final success will aim to make a substantial contribution to ticket #28821. Although this ticket is not the main priority of the GSoC, any progress made on this front will be considered an additional success, illustrating ongoing contributions to Django's improvement.
 
 ## About Me
-I am [ISSAKA HAMA Barhamou](https://hamabarhamou.onrender.com/), holding a degree in Mathematics and Computer Science from the University of Abdou Moumouni in Niamey. I have also earned a software engineering certification, specializing in Backend, through the [ALX AFRICA](https://www.alxafrica.com/) program.
+I am [ISSAKA HAMA Barhamou](https://hamabarhamou.onrender.com/), holding a degree in Mathematics and Computer Science from the [University of Abdou Moumouni](https://fr.wikipedia.org/wiki/Universit%C3%A9_Abdou-Moumouni) in Niamey/[Niger](https://fr.wikipedia.org/wiki/Niger). I have also earned a software engineering certification, specializing in Backend, through the [ALX AFRICA](https://www.alxafrica.com/) program.
 
 My passion for problem-solving has led me to actively engage on various coding platforms, where I enjoy taking on diverse challenges:
 
