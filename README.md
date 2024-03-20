@@ -1,12 +1,17 @@
 # Proposition GSoC 2024: Amélioration de `bulk_create` dans Django
 
 ## Introduction
-Cette proposition vise à étendre la fonction bulk_create de Django pour supporter explicitement le passage de noms de contraintes uniques, y compris pour les cas où ces contraintes concernent des colonnes calculées ou des expressions. Ce besoin émerge du ticket #34943 du système de suivi de Django, révélant une limitation significative dans la gestion des conflits d'insertion en masse dans des scénarios complexes.
+Cette proposition vise à améliorer de manière significative la fonction `bulk_create` de Django en intégrant deux améliorations majeures. La première partie de cette proposition se concentre sur la finalisation et l'intégration de la nouvelle fonctionnalité initiée dans le ticket #34277, qui permet d'ajouter une clause WHERE à `QuerySet.bulk_create()` lors de l'utilisation de `update_conflicts=True`. La seconde partie de la proposition aborde le ticket #34943, qui vise à étendre `bulk_create` pour supporter explicitement le passage de noms de contraintes uniques, y compris pour les cas où ces contraintes impliquent des colonnes calculées ou des expressions. Cette approche intégrée permettra de résoudre des limitations significatives dans la gestion des conflits d'insertion en masse et de rendre bulk_create plus flexible et puissant pour des scénarios d'utilisation complexes.
 
 ## Objectifs
-- Développer une nouvelle fonctionnalité dans bulk_create permettant de spécifier des contraintes uniques par leurs noms, offrant ainsi une gestion plus granulaire des conflits d'insertion.
-- Garantir la prise en charge des expressions et des colonnes calculées dans les contraintes uniques, permettant à Django de gérer des cas d'utilisation avancés.
-- Élaborer une suite de tests exhaustifs et une documentation détaillée pour assurer l'adoption et la compréhension aisées de la nouvelle fonctionnalité.
+- **Finaliser et Intégrer la Fonctionnalité du Ticket #34277 :** Assurer l'achèvement et l'intégration réussie de la nouvelle fonctionnalité permettant l'utilisation d'une clause WHERE dans bulk_create lors de la mise à jour des conflits, en veillant à ce que cette amélioration soit bien documentée et testée.
+- **Développer la Fonctionnalité du Ticket #34943 :** Étendre bulk_create pour permettre la spécification de contraintes uniques par leurs noms, facilitant ainsi la gestion des conflits d'insertion pour des cas avancés impliquant des colonnes calculées ou des expressions.
+- **Garantir une Couverture de Test Exhaustive :** Pour chacune des fonctionnalités développées, élaborer une suite de tests complète pour garantir leur fiabilité et leur intégrité dans divers scénarios d'utilisation.
+- **Fournir une Documentation Claire et Complète :** Assurer que les nouvelles fonctionnalités sont accompagnées d'une documentation détaillée, incluant des exemples d'utilisation et des guides de migration pour les développeurs.
+- **Planification pour le Ticket #28821 :** En fonction de l'avancement des tickets #34277 et #34943, envisager de débuter le travail sur l'amélioration proposée dans le ticket #28821, qui concerne la possibilité d'utiliser bulk_create avec l'héritage multi-table lorsque cela est possible, offrant ainsi une vision à long terme pour l'optimisation continue de bulk_create.
+- **Poursuite des Travaux sur le Ticket #28821:** Si les objectifs principaux concernant les tickets #34277 et #34943 sont atteints dans les délais impartis, un travail additionnel sur le ticket #28821 pourrait être envisagé comme un bonus. Ce ticket explore l'utilisation de bulk_create avec l'héritage multi-table et sera abordé en fonction des progrès réalisés et du temps restant, sans faire partie intégrante des engagements du GSoC.
+
+Cette proposition adopte une approche stratégique et intégrée pour améliorer la fonction bulk_create, en s'attaquant à des limitations clés et en offrant de nouvelles capacités qui enrichiront l'écosystème Django. En priorisant la finalisation du travail en cours sur le ticket #34277, cette proposition vise à apporter rapidement des améliorations tangibles à la communauté Django, tout en posant les bases pour des améliorations futures plus ambitieuses.
 
 
 ## Plan de Projet
@@ -16,7 +21,7 @@ Cette proposition vise à étendre la fonction bulk_create de Django pour suppor
 - **Benchmarking :** Étude des meilleures pratiques et des solutions existantes dans d'autres frameworks et langages de programmation pour gérer des situations similaires, afin d'inspirer notre approche.
 
 ### Phase 2 : Conception et Développement Initial
-- **Dépréciation de `unique_fields` :** Comme suggéré initialement, déprécier l'utilisation de `unique_fields` en faveur de `unique_constraints`, qui peut être plus expressif et flexible.
+- **Dépréciation de `unique_fields` :** Comme suggéré initialement, déprécier l'utilisation de `unique_fields` en faveur de `unique_constraints`, qui peut être plus expressif et flexible. Elle peut accepter non seulement des noms de contraintes uniques définies dans Meta.constraints, mais aussi potentiellement des tuples qui représentent des groupes de champs devant être uniques ensemble.
 
 
 - **Utilisation de `unique_constraints` :** Permettre à `unique_constraints` d'accepter des noms de contraintes (comme des chaînes) qui sont définies dans la classe `Meta` du modèle. Pour les expressions complexes, au lieu de les résoudre directement dans la clause SQL, Django pourrait les résoudre en amont en tant qu'ensemble de champs ou d'expressions représentant la contrainte, en utilisant les mécanismes d'inférence d'index ou les métadonnées de contrainte disponibles.
