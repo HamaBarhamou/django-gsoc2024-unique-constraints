@@ -138,7 +138,7 @@ Le succès de ce projet GSoC sera mesuré par plusieurs jalons clés corresponda
 - **Succès Final : Contribution au Ticket #28821** - En tant qu'objectif bonus, le succès final visera à apporter une contribution substantielle au ticket #28821. Bien que ce ticket ne soit pas la priorité principale du GSoC, tout progrès réalisé sur ce front sera considéré comme un succès supplémentaire, illustrant une contribution continue à l'amélioration de Django.
 
 ## À propos de Moi
-Je m'appelle [ISSAKA HAMA Barhamou](https://hamabarhamou.onrender.com/), titulaire d'une licence en Mathématiques et Informatique de l'Université Abdou Moumouni de Niamey. J'ai également obtenu une certification en génie logiciel, spécialité Backend, grâce au programme ALX AFRICA.
+Je m'appelle [ISSAKA HAMA Barhamou](https://hamabarhamou.onrender.com/), titulaire d'une licence en Mathématiques et Informatique de l'Université Abdou Moumouni de Niamey. J'ai également obtenu une certification en génie logiciel, spécialité Backend, grâce au programme [ALX AFRICA](https://www.alxafrica.com/).
 
 Ma passion pour la résolution de problèmes m'a conduit à m'engager activement sur plusieurs plateformes de codage, où je me plais à relever des défis variés :
 
