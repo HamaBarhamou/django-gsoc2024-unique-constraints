@@ -135,7 +135,35 @@ Le succès de ce projet GSoC sera mesuré par plusieurs jalons clés corresponda
 - **Succès Final : Contribution au Ticket #28821** - En tant qu'objectif bonus, le succès final visera à apporter une contribution substantielle au ticket #28821. Bien que ce ticket ne soit pas la priorité principale du GSoC, tout progrès réalisé sur ce front sera considéré comme un succès supplémentaire, illustrant une contribution continue à l'amélioration de Django.
 
 ## À propos de Moi
-Je suis [Votre Nom], étudiant(e) en [Votre Domaine d'Étude] à [Votre Université]. Passionné(e) par le développement web et contribuant activement à des projets open-source, je suis particulièrement intéressé(e) par l'amélioration de frameworks comme Django pour faciliter et optimiser le développement web.
+Je m'appelle ISSAKA HAMA Barhamou, titulaire d'une licence en Mathématiques et Informatique de l'Université Abdou Moumouni de Niamey. J'ai également obtenu une certification en génie logiciel, spécialité Backend, grâce au programme ALX AFRICA.
+
+Ma passion pour la résolution de problèmes m'a conduit à m'engager activement sur plusieurs plateformes de codage, où je me plais à relever des défis variés :
+
+- [CodinGame](https://www.codingame.com/profile/4b64838485f1e54cce2d616e201bb7969377233)
+- [France-IOI](http://www.france-ioi.org/user/perso.php?sLogin=barhamou)
+- [LeetCode](https://leetcode.com/barhamou/)
+- [HackerRank](https://www.hackerrank.com/profile/hamabarhamou)
+
+Outre la programmation, je suis également passionné par la cybersécurité, un domaine où je continue à développer mes compétences à travers des plateformes telles que :
+
+- [TryHackMe]()
+- [Root-Me]()
+
+Vous pouvez découvrir davantage sur mon parcours et mes projets via mon [portfolio](https://hamabarhamou.onrender.com/) et mon [github](https://github.com/HamaBarhamou).
+
+Je suis également actif sur les réseaux sociaux, où je partage régulièrement mes expériences et découvertes :
+
+- [Mastodon](https://mastodon.social/@HamaBarhamou)
+- [Twitter](https://twitter.com/hama_barhamou)
+- [LinkedIn](https://www.linkedin.com/in/barhamou-hama-90047b179/)
+
+En matière de développement Django, je suis actuellement impliqué dans le travail sur deux tickets significatifs :
+
+- Ticket [#34277](https://code.djangoproject.com/ticket/34277) avec [la pull request correspondante](https://github.com/django/django/pull/17515)
+- Ticket [#28821](https://code.djangoproject.com/ticket/28821) et sa [pull request](https://github.com/django/django/pull/17754)
+Ces contributions illustrent mon engagement envers l'amélioration de frameworks open-source et le partage de solutions innovantes avec la communauté.
+
+Au plaisir d'échanger avec vous !
 
 ## Communication
 Je prévois de communiquer régulièrement avec mon mentor et la communauté à travers le forum Django, les pull requests et les issues sur GitHub, en m'assurant que le projet reste aligné avec les attentes et bénéficie d'une collaboration étroite.
@@ -143,36 +171,3 @@ Je prévois de communiquer régulièrement avec mon mentor et la communauté à 
 
 ## Conclusion
 Cette proposition décrit mon plan de travail actuel sur des améliorations clés de la fonction `bulk_create` dans Django, à travers les tickets #34277, #34943, et #28821. Mon engagement sur ces tickets est indépendant de l'acceptation de cette proposition pour le Google Summer of Code. Je suis déterminé à apporter ces contributions significatives à Django, en tirant parti de cette opportunité pour aligner mes efforts avec les objectifs du GSoC, réalisant ainsi une synergie entre mes travaux en cours et l'esprit collaboratif et innovant du programme. En participant au GSoC, je souhaite non seulement avancer sur ces tickets déjà acceptés mais aussi partager cette expérience avec la communauté, enrichir mes connaissances et, espérons-le, accélérer le développement de ces fonctionnalités importantes pour Django. C'est dans cet esprit de collaboration et d'innovation continue que je présente ma proposition, dans l'espoir d'apporter une valeur ajoutée tangible à Django et à sa vibrante communauté de développeurs.
-
-## Présentation
-Je m'appelle ISSAKA HAMA Barhamou, titulaire d'une licence en Mathématiques et Informatique de l'Université Abdou Moumouni de Niamey. J'ai également obtenu une certification en génie logiciel, spécialité Backend, grâce au programme ALX AFRICA.
-
-Ma passion pour la résolution de problèmes m'a conduit à m'engager activement sur plusieurs plateformes de codage, où je me plais à relever des défis variés :
-
-[CodinGame](https://www.codingame.com/profile/4b64838485f1e54cce2d616e201bb7969377233)
-[France-IOI](http://www.france-ioi.org/user/perso.php?sLogin=barhamou)
-[LeetCode](https://leetcode.com/barhamou/)
-[HackerRank](https://www.hackerrank.com/profile/hamabarhamou)
-
-Outre la programmation, je suis également passionné par la cybersécurité, un domaine où je continue à développer mes compétences à travers des plateformes telles que :
-
-[TryHackMe]()
-[Root-Me]()
-
-Vous pouvez découvrir davantage sur mon parcours et mes projets via mon [portfolio](https://hamabarhamou.onrender.com/) et mon [github](https://github.com/HamaBarhamou).
-
-Je suis également actif sur les réseaux sociaux, où je partage régulièrement mes expériences et découvertes :
-
-[Mastodon](https://mastodon.social/@HamaBarhamou)
-[Twitter](https://twitter.com/hama_barhamou)
-[LinkedIn](https://www.linkedin.com/in/barhamou-hama-90047b179/)
-
-En matière de développement Django, je suis actuellement impliqué dans le travail sur deux tickets significatifs :
-
-Ticket [#34277](https://code.djangoproject.com/ticket/34277) avec [la pull request correspondante](https://github.com/django/django/pull/17515)
-Ticket [#28821](https://code.djangoproject.com/ticket/28821) et sa [pull request](https://github.com/django/django/pull/17754)
-Ces contributions illustrent mon engagement envers l'amélioration de frameworks open-source et le partage de solutions innovantes avec la communauté.
-
-Au plaisir d'échanger avec vous !
-
-
