@@ -19,10 +19,10 @@ This proposal adopts a strategic and integrated approach to improve the `bulk_cr
 - **Benchmarking:** Study best practices and existing solutions in other frameworks and programming languages for handling similar situations to inspire our approach.
 
 ### Phase 2: Initial Design and Development
-- **Deprecating `unique_fields`:** As initially suggested by Simon Charette
+- **Deprecating `unique_fields`:** As initially suggested by Simon Charette:
 >My recommendation would be to introduce a unique_constraint: str | tuple[str | Expression] kwarg and deprecate unique_fields. When provided a str it would be a reference to a UniqueConstraint by .name and when it's a tuple it would be expected to be an index expression where str are resolved to field names.
 
-, deprecate the use of `unique_fields` in favor of `unique_constraints`, which can be more expressive and flexible. It could accept not only the names of unique constraints defined in `Meta.constraints` but also potentially tuples representing groups of fields that must be unique together.
+Deprecate the use of `unique_fields` in favor of `unique_constraints`, which can be more expressive and flexible. It could accept not only the names of unique constraints defined in `Meta.constraints` but also potentially tuples representing groups of fields that must be unique together.
 
 - **Using `unique_constraints`:** Allow `unique_constraints` to accept constraint names (as strings) defined in the model's `Meta` class. For complex expressions, instead of resolving them directly in the SQL clause, Django could resolve them upfront as a set of fields or expressions representing the constraint, using index inference mechanisms or constraint metadata.
 
