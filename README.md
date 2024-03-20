@@ -162,7 +162,7 @@ In terms of Django development, I am currently working on two significant ticket
 - Ticket [#34277](https://code.djangoproject.com/ticket/34277) with [the corresponding pull request](https://github.com/django/django/pull/17515)
 - Ticket [#28821](https://code.djangoproject.com/ticket/28821) and its [pull request](https://github.com/django/django/pull/17754)
 
-These works illustrate my commitment to improving open-source frameworks and sharing innovative solutions with the community.
+These works illustrate my commitment to improving the Django framework and sharing innovative solutions with the community.
 
 Looking forward to connecting with you!
 
