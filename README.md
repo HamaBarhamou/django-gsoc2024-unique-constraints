@@ -130,8 +130,5 @@ Je suis [Votre Nom], étudiant(e) en [Votre Domaine d'Étude] à [Votre Universi
 Je prévois de communiquer régulièrement avec mon mentor et la communauté à travers le forum Django, les pull requests et les issues sur GitHub, en m'assurant que le projet reste aligné avec les attentes et bénéficie d'une collaboration étroite.
 
 ## Conclusion
-Voici une version adaptée de la conclusion, prenant en compte les trois tickets mentionnés :
-
-## Conclusion
 Cette proposition, centrée sur l'amélioration de la fonction `bulk_create` de Django, a pour but d'apporter des modifications significatives et bénéfiques à travers plusieurs axes de développement. En finalisant les travaux sur les tickets #34277 et #34943, nous visons à offrir une gestion plus fine et plus puissante des conflits d'insertion et des contraintes uniques, y compris celles impliquant des expressions complexes et des colonnes calculées. De plus, l'exploration potentielle du ticket #28821 en tant que bonus enrichirait davantage la fonctionnalité `bulk_create`, en étendant son utilisation à des scénarios d'héritage multi-tables. Ensemble, ces améliorations visent à renforcer la robustesse et la performance du développement d'applications avec Django, tout en contribuant activement à l'évolution de ce framework largement adopté. En m'engageant dans ce projet, j'espère apporter ma contribution à la communauté Django, en partageant mon énergie, mon expertise et ma passion pour le développement de solutions innovantes et efficaces.
 
