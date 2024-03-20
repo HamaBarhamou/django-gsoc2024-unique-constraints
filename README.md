@@ -22,6 +22,7 @@ Cette proposition adopte une approche stratégique et intégrée pour améliorer
 ### Phase 2 : Conception et Développement Initial
 - **Dépréciation de `unique_fields` :** Comme suggéré initialement par Simon Charette
 >My recommendation would be to introduce a unique_constraint: str | tuple[str | Expression] kwarg and deprecate unique_fields. When provided a str it would be a reference >to a UniqueConstraint by .name and when it's a tuple it would be expected to be a index expression where str are resolved to field names.
+
 , déprécier l'utilisation de `unique_fields` en faveur de `unique_constraints`, qui peut être plus expressif et flexible. Elle peut accepter non seulement des noms de contraintes uniques définies dans `Meta.constraints`, mais aussi potentiellement des tuples qui représentent des groupes de champs devant être uniques ensemble.
 
 
