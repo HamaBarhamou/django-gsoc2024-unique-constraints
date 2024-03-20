@@ -157,7 +157,7 @@ I am also active on social media, where I regularly share my experiences and dis
 - [Twitter](https://twitter.com/hama_barhamou)
 - [LinkedIn](https://www.linkedin.com/in/barhamou-hama-90047b179/)
 
-In terms of Django development, I am currently involved in working on two significant tickets:
+In terms of Django development, I am currently working on two significant tickets:
 
 - Ticket [#34277](https://code.djangoproject.com/ticket/34277) with [the corresponding pull request](https://github.com/django/django/pull/17515)
 - Ticket [#28821](https://code.djangoproject.com/ticket/28821) and its [pull request](https://github.com/django/django/pull/17754)

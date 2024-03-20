@@ -160,7 +160,7 @@ Je suis également actif sur les réseaux sociaux, où je partage régulièremen
 - [Twitter](https://twitter.com/hama_barhamou)
 - [LinkedIn](https://www.linkedin.com/in/barhamou-hama-90047b179/)
 
-En matière de développement Django, je suis actuellement impliqué dans le travail sur deux tickets significatifs :
+En matière de développement Django, je travail actuellement sur deux tickets significatifs :
 
 - Ticket [#34277](https://code.djangoproject.com/ticket/34277) avec [la pull request correspondante](https://github.com/django/django/pull/17515)
 - Ticket [#28821](https://code.djangoproject.com/ticket/28821) et sa [pull request](https://github.com/django/django/pull/17754)
